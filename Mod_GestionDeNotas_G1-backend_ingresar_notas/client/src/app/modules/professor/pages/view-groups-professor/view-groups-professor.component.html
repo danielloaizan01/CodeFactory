@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <h1>Cursos</h1>
+  <div class="container card shadow containerInside mt-3 p-3 pt-1 position-relative">
+
+    <p>Seleccione un Curso</p>
+    <div class="d-flex">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3" *ngFor="let curso of cursos" >
+        <div class="btn card h-75 shadow p-3 m-3 d-flex align-items-center" (click)="buscar(curso)">
+          <p>{{curso.nombre}}</p>
+          <p>{{curso.codigo}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container container-groups  mt-5" *ngIf="grupos.length > 0">
+  <div class="container card shadow containerInside mt-3 p-3 pt-1 position-relative">
+    <div class="d-flex">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3" *ngFor="let grupo of grupos">
+        <div class="btn card card-groups h-75 shadow p-3 d-flex align-items-center m-3">
+          <p>GRUPO: {{grupo.grupoId}}</p>
+          <p>HORARIO: </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

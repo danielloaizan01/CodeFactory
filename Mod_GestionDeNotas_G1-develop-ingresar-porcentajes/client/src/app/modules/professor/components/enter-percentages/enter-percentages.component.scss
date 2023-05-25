@@ -1,0 +1,28 @@
+.card-percentages {
+  max-width: 32rem;
+  background-color: #fafff9;
+}
+
+.card--header {
+  background: rgba(2, 105, 55, 1);
+}
+
+.btn--close {
+  width: 1.8rem;
+  height: 1.8rem;
+
+  i {
+    font-size: 1.2rem;
+  }
+}
+
+input {
+  width: 100%;
+}
+
+.btn-close-field {
+  color: #DC3545;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

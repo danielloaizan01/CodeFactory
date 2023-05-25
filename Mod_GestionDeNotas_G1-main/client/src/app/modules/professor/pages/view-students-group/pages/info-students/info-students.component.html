@@ -1,0 +1,23 @@
+<div class="container mt-3">
+  <div class="alert alert-warning" *ngIf="students.length <= 0" role="alert">
+    Todavia no tiene estudiantes asignados a este grupo
+  </div>
+  <table class="table" *ngIf="students.length > 0">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre Estudiante</th>
+        <th scope="col">Correo Institucional</th>
+        <th scope="col"># de Indentificación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{student.nombre}}</td>
+        <td>{{student.correo}}</td>
+        <td>{{student.numeroIdentificacion}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
