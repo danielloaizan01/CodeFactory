@@ -18,6 +18,10 @@
 		<java.version>11</java.version>
 		<org.mapstruct.version>1.5.3.Final</org.mapstruct.version>
 	</properties>
+	<properties>
+  		<sonar.organization>danielloaizan01</sonar.organization>
+  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
